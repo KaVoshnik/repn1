@@ -1,0 +1,14 @@
+#include <iostream>
+
+using namespace std;
+
+int main () {
+    int n;
+    int spos(int n);
+	    cout << "n =";
+    	cin >> n;
+    if (n % 2 == 0) n / 2;
+    else 3 * n + 1;	
+	  cout << spos;
+	return 0; //помогите время время всего лишь 22:29 а я уже хочу
+}
