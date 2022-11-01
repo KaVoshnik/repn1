@@ -1,0 +1,39 @@
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+int main(int argc, char* argv[]) {
+    int buff;
+    int pressedkey, MoneyInBalance;
+    {
+        ofstream fout("balance.txt");
+        fout << "user_balance = 0";
+        fout.close();
+
+    }
+    while (int i = 1) {
+        std::cout << "for check your balance press 1" << endl;
+        std::cout << "for deposit money press 2" << endl;
+        cin >> pressedkey;
+
+        if (pressedkey == 1) {
+            ifstream fin("balance.txt");
+            fin >> buff;
+            cout << ("your balance = ") << buff << endl;
+        }
+        else if (pressedkey == 2) {
+            ifstream fin("balance.txt");
+            fin >> buff;
+            cout << ("enter money") << endl;
+            cin >> MoneyInBalance;
+            cout << "operation finished" << endl;
+            cout << ("your balance = ") << buff + MoneyInBalance << endl;
+        //  fout << "user_balance = ";
+        }
+        else if (pressedkey == 3) {
+        
+        }
+    }
+}
+//exit(pressedkey == 6);
