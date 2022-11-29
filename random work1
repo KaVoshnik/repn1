@@ -1,0 +1,24 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main() {
+
+	const int N = 10;
+	int M[N];
+	for (int i = 0; i < N; i++)
+	{
+		cout << "enter array element M[" << i << "] = ";
+		cin >> M[i];
+		}
+
+		double Mxi = 0;
+
+		for (int i = 0; i < N; i++)
+
+		for (int i = 0; i < N; i++) {
+			Mxi += M[i] * M[N];
+		}
+		cout << "Mxi = " << Mxi << endl;
+}
